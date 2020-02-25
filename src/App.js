@@ -29,8 +29,11 @@ class App extends React.Component {
     }
 
     return (
-      <div id="App">
-        {body}
+      <div><a href="https://github.com/kumpmati/reaktor-preassignment">GitHub</a>
+        <div id="App">
+
+          {body}
+        </div>
       </div>
     );
   }
@@ -42,7 +45,7 @@ class App extends React.Component {
         this.setState({data: data});
       },
       error => {
-        this.setState({data: {type: "error", message: error}})
+        this.setState({data: error});
       });
   }
 }
