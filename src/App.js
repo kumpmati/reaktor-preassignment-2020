@@ -39,7 +39,7 @@ class App extends React.Component {
   }
 
   getData() {
-    let fetchAddress = `${process.env.ADDR}${window.location.pathname}`;
+    let fetchAddress = `https://reaktor-preassignment-backend.herokuapp.com/api${window.location.pathname}`;
     console.log("fetching from: " + fetchAddress);
     fetch(fetchAddress) // https://localhost:9001/api/<packageName>
       .then(res => res.json())
