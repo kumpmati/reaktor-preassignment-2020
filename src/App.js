@@ -7,13 +7,13 @@ import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {data: {type: "loading"}, view: "all"};
+    this.state = { data: { type: "loading" }, view: "all" };
     this.getData();
   }
 
   render() {
     let body;
-    switch(this.state.data.type) {
+    switch (this.state.data.type) {
       case "package_list":
         body = (<PackageView data={this.state.data} />);
         break;
@@ -47,14 +47,14 @@ class App extends React.Component {
   getData() {
     let fetchAddress = `https://reaktor-preassignment-backend.herokuapp.com/api${window.location.pathname}`;
     console.log("fetching from: " + fetchAddress);
-    fetch(fetchAddress) // https://localhost:9001/api/<packageName>
+    fetch(fetchAddress)
       .then(res => res.json())
       .then(data => {
-        this.setState({data: data});
+        this.setState({ data: data });
       },
-      error => {
-        this.setState({data: error});
-      });
+        error => {
+          this.setState({ data: error });
+        });
   }
 }
 
