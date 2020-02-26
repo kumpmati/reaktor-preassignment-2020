@@ -39,8 +39,9 @@ class App extends React.Component {
   }
 
   getData() {
-    
-    fetch(`${process.env.ADDR}${window.location.pathname}`) // https://localhost:9001/api/<packageName>
+    let fetchAddress = `${process.env.ADDR}${window.location.pathname}`;
+    console.log("fetching from: " + fetchAddress);
+    fetch(fetchAddress) // https://localhost:9001/api/<packageName>
       .then(res => res.json())
       .then(data => {
         this.setState({data: data});
