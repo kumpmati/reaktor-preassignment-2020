@@ -40,7 +40,7 @@ class App extends React.Component {
 
   getData() {
     
-    fetch(`${process.end.ADDR}${window.location.pathname}`) // https://localhost:9001/api/<packageName>
+    fetch(`${process.env.ADDR}${window.location.pathname}`) // https://localhost:9001/api/<packageName>
       .then(res => res.json())
       .then(data => {
         this.setState({data: data});
