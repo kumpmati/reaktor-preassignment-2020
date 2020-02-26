@@ -81,3 +81,7 @@ a:hover {
     color: black;
     background-color: rgb(230, 230, 230);
 }
+
+#git_links > * {
+    margin: 0;
+}

@@ -30,8 +30,12 @@ class App extends React.Component {
 
     return (
       <div>
-        <a href="https://github.com/kumpmati/reaktor-preassignment-frontend">Frontend GitHub</a>
-        <a href="https://github.com/kumpmati/reaktor-preassignment-backend">Backend GitHub</a>
+        <div id="git_links">
+          <p>GitHub links:</p>
+          <a href="https://github.com/kumpmati/reaktor-preassignment-frontend">Frontend</a>
+          /
+          <a href="https://github.com/kumpmati/reaktor-preassignment-backend">Backend</a>
+        </div>
         <div id="App">
 
           {body}
