@@ -29,7 +29,9 @@ class App extends React.Component {
     }
 
     return (
-      <div><a href="https://github.com/kumpmati/reaktor-preassignment">GitHub</a>
+      <div>
+        <a href="https://github.com/kumpmati/reaktor-preassignment-frontend">Frontend GitHub</a>
+        <a href="https://github.com/kumpmati/reaktor-preassignment-backend">Backend GitHub</a>
         <div id="App">
 
           {body}
