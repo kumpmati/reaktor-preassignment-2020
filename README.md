@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Reaktor preassignment 2020 frontend
+
+### [DEMO](https://reaktor-preassignment-frontend.herokuapp.com/)
 
 ## Available Scripts
 
